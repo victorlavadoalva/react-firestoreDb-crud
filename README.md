@@ -1,3 +1,23 @@
+# Configurar la conexión a firebase:
+
+import { initializeApp } from "firebase/app";
+
+import { getFirestore } from '@firebase/firestore'
+
+const firebaseConfig = {
+  apiKey: "XXXXXXXXXXXX",
+  authDomain: "XXXXXXXXXX",
+  projectId: "XXXXX",
+  storageBucket: "XXXXXXXXX",
+  messagingSenderId: "XXXXXXXX",
+  appId: "XXXXXXXXX",
+};
+
+const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
